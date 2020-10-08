@@ -19,14 +19,14 @@ def classification_data():
 
     return x, y
 
-#def regression_data(): 
-  #  x = np.random.uniform(low=-10.0, high=10.0, size=100)
-   # y = f(x) + np.random.normal(scale=2.0, size=100)
-   # return x, y 
+def regression_data(): 
+   x = np.random.uniform(low=-10.0, high=10.0, size=100)
+   y = f(x) + np.random.normal(scale=20, size=100)
+   return x, y 
 
 colors = np.array(["red", "blue"])
 
-x, y = classification_data()
-print(x.shape, y.shape)
-plt.scatter(x[:,0], x[:, 1], c=colors[y[:]])
-plt.show()
+#x, y = classification_data()
+#print(x.shape, y.shape)
+#plt.scatter(x[:,0], x[:, 1], c=colors[y[:]])
+#plt.show()
