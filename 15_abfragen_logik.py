@@ -9,3 +9,4 @@ if alter >= 18:
     print(checkAlter)
 else:
     print("Zu Jung")
+
